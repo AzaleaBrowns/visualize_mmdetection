@@ -82,16 +82,16 @@ def imshow_det_bboxes(img,
         bboxes = bboxes[inds, :]
         labels = labels[inds]
     color = {
-            "caption": 'red',
-            "figure": 'blue',
-            "table": 'green',
-            "formula": "yellow"
+            "car": 'red',
+            "bus": 'blue',
+            "truck": 'green',
+            "motor": "yellow"
           }
     # labelss = {
-    #     "caption": "1",
-    #     "figure": "2",
-    #     "table": "3",
-    #     "formula": "4"
+    #     "car": "1",
+    #     "bus": "2",
+    #     "truck": "3",
+    #     "motor": "4"
     #   }
     # f = open(out_file.split(".")[0] + ".txt","w")
     text_color = mmcv.color_val(text_color)
